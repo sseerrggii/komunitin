@@ -1,7 +1,7 @@
 <template>
   <q-layout>
-    <q-page-container class="container-kn">
-      <q-header reveal elevated>
+    <q-page-container>
+      <q-header reveal>
         <q-toolbar>
           <q-btn flat dense round icon="arrow_back" aria-label="Home" @click="$router.back()" />
           <q-toolbar-title v-if="group.data">

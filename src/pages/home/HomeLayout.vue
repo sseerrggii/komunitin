@@ -6,7 +6,7 @@
           flat
           dense
           round
-          color="white"
+          color="onprimary"
           icon="arrow_back"
           aria-label="Home"
           @click="$router.back()"
@@ -17,8 +17,8 @@
     <q-page-container>
       <div class="text-onoutside q-mt-md q-mb-xl">
         <h1 class="q-mb-xs q-mt-none text-center">
-          <div id="welcome-to">{{ $t('Welcome to') }}</div>
-          <div id="komunitin">Komunitin</div>
+          <svg id="welcome-to" viewBox="0 0 300 100"><text x="0" y="80">{{ $t('Welcome to') }}</text></svg>
+          <svg id="komunitin" width="300"><text x="0" y="20">Komunitin</text></svg>
         </h1>
         <p id="slogan" class="text-subtitle1">{{ $t('Open System for Exchange Communities') }}</p>
       </div>
@@ -77,15 +77,13 @@ export default Vue.extend({
 
 // Adjust the size of 'Welcome to' text so it is full-width.
 #welcome-to {
+  width: 300px;
   font-weight: 300;
-  font-size: 4.1rem;
-  line-height: 4.1rem;
 }
 // Adjust the size of 'Komunitin' text so it is full-width and bold.
 #komunitin {
+  width: 300px;
   font-weight: 500;
-  font-size: 4.65rem;
-  line-height: 4.65rem;
 }
 // Adjust the size of slogan text so it is full-width.
 #slogan {
